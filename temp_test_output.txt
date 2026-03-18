@@ -1,0 +1,9 @@
+test_emotion_detector_empty_text_returns_none (test_emotion_detection.TestEmotionDetector.test_emotion_detector_empty_text_returns_none)
+Status 400 should return None values for all keys. ... ok
+test_emotion_detector_happy_path (test_emotion_detection.TestEmotionDetector.test_emotion_detector_happy_path)
+Happy path should return dominant emotion and scores. ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK

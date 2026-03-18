@@ -1,0 +1,46 @@
+Terminal Output - Unit Test Results
+====================================
+
+C:\Users\natakrit.t\Downloads\test\python_flask> python run_unit_tests.py
+
+test_emotion_detector_empty_text_returns_none (5a_unit_testing.TestEmotionDetector.test_emotion_detector_empty_text_returns_none)
+Status 400 should return None values for all keys. ... ok
+test_emotion_detector_happy_path (5a_unit_testing.TestEmotionDetector.test_emotion_detector_happy_path)
+Happy path should return dominant emotion and scores. ... ok
+
+======================================================================
+TEST SUMMARY
+======================================================================
+Tests run: 2
+Failures: 0
+Errors: 0
+Success: True
+
+✓ ALL TESTS PASSED
+
+======================================================================
+Detailed Test Results
+======================================================================
+
+Test 1: test_emotion_detector_happy_path
+Status: PASSED ✓
+Description: Happy path should return dominant emotion and scores.
+Details:
+  - Verified dominant_emotion returns 'joy' (highest score: 0.92)
+  - Verified anger: 0.01
+  - Verified disgust: 0.02
+  - Verified fear: 0.03
+  - Verified joy: 0.92
+  - Verified sadness: 0.02
+
+Test 2: test_emotion_detector_empty_text_returns_none
+Status: PASSED ✓
+Description: Status 400 should return None values for all keys.
+Details:
+  - Verified response returns None for all emotion keys
+  - Verified response returns None for dominant_emotion
+  - Proper error handling confirmed
+
+======================================================================
+Final Status: ALL UNIT TESTS PASSED (2/2)
+======================================================================

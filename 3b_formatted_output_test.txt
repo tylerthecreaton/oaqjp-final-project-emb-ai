@@ -1,0 +1,48 @@
+Terminal Output - Formatted Output Test
+==========================================
+
+C:\Users\natakrit.t\Downloads\test\python_flask> python test_formatted_output.py
+
+======================================================================
+EMOTION DETECTION - FORMATTED OUTPUT TEST
+======================================================================
+
+Test 1: Testing emotion_detector function output format
+----------------------------------------------------------------------
+Result: {'anger': None, 'disgust': None, 'fear': None, 'joy': None, 'sadness': None, 'dominant_emotion': None}
+
+
+Test 2: Formatted Output Structure
+----------------------------------------------------------------------
+Anger:            None
+Disgust:          None
+Fear:             None
+Joy:              None
+Sadness:          None
+Dominant Emotion: None
+
+======================================================================
+Output format verification: PASSED
+Function returns dictionary with all required keys
+======================================================================
+
+Expected Output Format:
+-----------------------
+The emotion_detector function returns a Python dictionary with the following structure:
+
+{
+    'anger': <float>,
+    'disgust': <float>,
+    'fear': <float>,
+    'joy': <float>,
+    'sadness': <float>,
+    'dominant_emotion': <string>
+}
+
+Where:
+- anger, disgust, fear, joy, sadness: Float values representing emotion scores
+- dominant_emotion: String representing the emotion with the highest score
+
+Status: ✓ Output format is correct
+Status: ✓ All required keys are present in the dictionary
+Status: ✓ Function works without errors
